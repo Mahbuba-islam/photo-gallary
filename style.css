@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner{
+    display:flex;
+    height: 100vh;
+    
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.left-banner{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  
+}
+
+ .banner-title{
+   font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+    
+
+}
+
+.banner-title::before{
+    content: 'Programming hero';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(8, 204, 230);
+    animation: typing 3s linear infinite;
+  
+}
+
+
+.banner-description{
+    color: white;
+}
+
+@keyframes typing{
+    
+        0% {
+            content: 'P|';
+        }
+    
+        4% {
+            content: 'Pr|';
+        }
+    
+        8% {
+            content: 'Pro|';
+        }
+    
+        12% {
+            content: 'Prog|';
+        }
+    
+        16% {
+            content: 'Progr|';
+        }
+    
+        20% {
+            content: 'Progra|';
+        }
+    
+        24% {
+            content: 'Program|';
+        }
+    
+        28% {
+            content: 'Programm|';
+        }
+    
+        32% {
+            content: 'Programmi|';
+        }
+    
+        36% {
+            content: 'Programmin|';
+        }
+    
+        40% {
+            content: 'Programming|';
+        }
+    
+        44% {
+            content: 'Programming |';
+        }
+    
+        48% {
+            content: 'Programming h|';
+        }
+    
+        52% {
+            content: 'Programming he|';
+        }
+    
+        56% {
+            content: 'Programming her|';
+        }
+    
+        60% {
+            content: 'Programming hero|';
+        }
+    
+        64%,
+        83% {
+            content: 'Programming hero|';
+        }
+    
+        84% {
+            content: 'Programming her|';
+        }
+    
+        85% {
+            content: 'Programming he|';
+        }
+    
+        86% {
+            content: 'Programming h|';
+        }
+    
+        87% {
+            content: 'Programming |';
+        }
+    
+        88% {
+            content: 'Programming|';
+        }
+    
+        89% {
+            content: 'Programmin|';
+        }
+    
+        90% {
+            content: 'Programmi|';
+        }
+    
+        91% {
+            content: 'Programm|';
+        }
+    
+        92% {
+            content: 'Program|';
+        }
+    
+        93% {
+            content: 'Progra|';
+        }
+    
+        94% {
+            content: 'Progr|';
+        }
+    
+        95% {
+            content: 'Prog|';
+        }
+    
+        96% {
+            content: 'Pro|';
+        }
+    
+        97% {
+            content: 'Pr|';
+        }
+    
+        98% {
+            content: 'P|';
+        }
+    
+        99% {
+            content: '|';
+        }
+    
+        100% {
+            content: '|';
+        }
+    }
+
+    .banner-title{
+        font-size: 60px;
+        white-space: nowrap;
+        position: relative;
+        color: transparent;
+    }
+    
+    
+
+.left-banner p{
+    line-height: 2;
+}
+.left-banner button{
+  padding: 10px 7px;
+  margin-top: 15px;
+  background-color: rgb(0, 17, 255);
+  border: 0;
+  border-radius: 5%;
+  color: white;
+  transition: .3s linear;
+
+  
+}
+
+.left-banner button:hover{
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+ 
+
+}
+.right-banner{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 0;
+    margin: 50px 0;
+    
+}
+
+.gallery-title{
+    text-align: center;
+}
+
+.gallery-title h1{
+    color: rgb(8, 204, 230);;
+    font-size: 50px;
+    font-weight: 700;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: .8;
+    
+    
+}
+
+.photo{
+    height: 280px;
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.border{
+    background-color: white;
+    position: absolute;
+    transition: .7s ease-in-out;
+}
+
+.border.top, .border.bottom{
+    height: 4px;
+    width:270px ;
+}
+
+.border.left, .border.right{
+    height: 270px;
+    width: 4px;
+}
+
+.border.top{
+    top: 5px;
+    right: 100%;
+}
+
+.border.bottom{
+    bottom: 5px;
+    left: 100%;
+}
+
+.border.left{
+    left: 5px;
+    top: 100%;
+}
+
+.border.right{
+   right: 5px;
+   bottom: 100%;
+}
+
+.photo-content{
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    text-align: center;
+    display: none;
+    transition: .7s ease-in;
+}
+
+
+.photo:hover .border.top{
+  right: 5px;
+
+}
+
+.photo:hover .border.bottom{
+    left: 5px;
+    
+  }
+
+  .photo:hover .border.left{
+    top: 5px;
+ }
+
+  .photo:hover .border.right{
+     bottom: 5px;
+
+  }
+
+  .photo:hover .photo-content{
+    transform: translateY(180px);
+    display: block;
+
+  }
+
+  .photo::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+   background-color: rgba(17, 2, 16, 0.336);
+   opacity: 0;
+    top: 0;
+    left: 0;
+    transition: .3s linear;
+  }
+
+  .photo:hover::before{
+    opacity: 2;
+  }
